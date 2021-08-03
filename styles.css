@@ -1,0 +1,10 @@
+body {
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Oswald', sans-serif;
+    background-color: #edfffe;
+    padding: 0 25rem;
+}
+
+.navbar-section-logo {
+    height: 2.25rem;
+}
