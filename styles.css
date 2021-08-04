@@ -1,10 +1,255 @@
 body {
     font-family: 'Comfortaa', cursive;
-    font-family: 'Oswald', sans-serif;
     background-color: #edfffe;
-    padding: 0 25rem;
+    padding: 0 10%;
+    color: #000;
 }
 
+/* common */
+.ff-oswald {
+    font-family: 'Oswald', sans-serif;
+}
+.btn {
+    background-color: #34a5ab;
+    opacity: 0.8;
+    border: none;
+}
+.btn:hover {
+    background-color: #34a5ab;
+    opacity: 1;
+    border: none;
+}
+.rounded-border {
+    border-radius: 10px;
+    border: none;
+}
+
+/* Navbar */
 .navbar-section-logo {
     height: 2.25rem;
+}
+.navbar-links {
+    width: 12rem;
+}
+
+/* Main Section */
+.main {
+    min-height: 35rem;
+}
+.main-text {
+    z-index: 1;
+}
+.main-text h1 {
+    font-size: 3rem;
+}
+.unlocked-main-img {
+    height: 35rem;
+}
+
+/* Timeline Section */
+.timeline {
+    width: 50%;
+    list-style-type: none;
+}
+.timeline li {
+    padding-left: 30px;
+    border-left: 3px solid #34a5ab;
+    position: relative;
+}
+.timeline li:last-child {
+    border-left: 0;
+}
+.timeline .first:before,
+.timeline .last:before {
+    content: ' ';
+    background: #34a5ab;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    left: -13.5px;
+    top: -5px;
+    width: 25px;
+    height: 25px;
+    z-index: 100;
+}
+.timeline li:first-child {
+    position: relative;
+}
+.list-border:before {
+    content: ' ';
+    display: inline-block;
+    position: absolute;
+    border: 1px solid #34a5ab;
+    border-radius: 50%;
+    left: -21px;
+    top: -12.5px;
+    width: 40px;
+    height: 40px;
+    z-index: 100;
+}
+.timeline .middle {
+    position: relative;
+    left: -100%;
+    padding-left: 0;
+    padding-right: 35px;
+    border-left: none;
+    box-shadow: 3px 0px 0px 0px #34a5ab;
+}
+.timeline .middle:before {
+    content: ' ';
+    background: #34a5ab;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    right: -15px;
+    top: -5px;
+    width: 25px;
+    height: 25px;
+    z-index: 100;
+}
+
+/* Services Section */
+.unlocked-services-1-img,
+.unlocked-services-2-img {
+    height: 30rem;
+}
+.services-heading {
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+.services-heading::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    width: 2.5rem;
+    height: 4px;
+    background-color: #000;
+}
+
+/* Clients Section */
+.clients {
+    margin-bottom: 7.5rem;
+}
+.clients-row .card {
+    width: 45%;
+}
+.empty-img {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+}
+
+/* Form Section */
+.form {
+    width: 30%;
+    margin: auto;
+}
+input,
+textarea {
+    background-color: #c2f0ee;
+    padding: 0.75rem;
+    border: none;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 4px rgb(0 0 0 / 20%);
+    width: 100%;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+    color: #34a5ab;
+}
+
+/* Footer Section */
+.footer {
+    margin: 7.5rem 0;
+}
+.footer-links {
+    width: 15rem;
+    color: #34a5ab;
+    text-decoration: underline;
+}
+.icons {
+    font-size: 2.5rem;
+    width: 10rem;
+}
+
+@media (max-width: 1300px) {
+    body {
+        padding: 0 7.5%;
+    }
+    .services-adv h2 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .timeline {
+        margin-left: 7.5rem;
+        width: 60%;
+    }
+    .timeline .middle {
+        position: relative;
+        left: 0;
+        box-shadow: none;
+        padding-left: 30px;
+        border-left: 3px solid #34a5ab;
+        position: relative;
+    }
+    .timeline .middle:before {
+        content: ' ';
+        background: #34a5ab;
+        display: inline-block;
+        position: absolute;
+        border-radius: 50%;
+        left: -13.5px;
+        top: -5px;
+        width: 25px;
+        height: 25px;
+        z-index: 100;
+    }
+
+    .services {
+        padding: 0 15%;
+    }
+
+    .clients-row .card {
+        width: 60%;
+    }
+
+    .form {
+        width: 50%;
+    }
+
+    .footer {
+        text-align: center;
+    }
+    .footer .icons {
+        margin-top: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .services {
+        padding: 0;
+    }
+
+    .clients-row .card {
+        width: 100%;
+    }
+
+    .form {
+        width: 100%;
+    }
+    .form button {
+        width: 100%;
+    }
 }

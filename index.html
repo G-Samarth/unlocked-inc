@@ -11,152 +11,494 @@
             rel="stylesheet"
         />
         <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+            integrity="sha384-tKLJeE1ALTUwtXlaGjJYM3sejfssWdAaWR2s97axw4xkiAdMzQjtOjgcyw0Y50KU"
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="styles.css" />
         <title>Unlocked Inc.</title>
     </head>
     <body>
-        <nav class="navbar-section d-flex justify-content-between">
-            <img class="navbar-section-logo" src="/images/unlocked-logo.png" />
-            <div
-                class="collapse navbar-collapse navbar-section-links"
-                id="navbarSupportedContent"
-            >
-                <!--
-                class="collapse navbar-collapse navbar-section-links"
-                id="navbarSupportedContent"
-                -->
-                <ul class="navbar-nav mr-auto d-flex">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">BLOGS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid my-3">
+                <a class="navbar-brand" href="#">
+                    <img
+                        class="navbar-section-logo"
+                        src="./images/unlocked-logo.png"
+                    />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse flex-grow-0"
+                    id="navbarSupportedContent"
+                >
+                    <ul
+                        class="
+                            navbar-links navbar-nav
+                            me-auto
+                            mb-2 mb-lg-0
+                            justify-content-between
+                        "
+                    >
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">BLOGS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">ABOUT</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
-        <section class="section-1">
-            <div>
-                <p>DATA DRIVEN</p>
-                <h1>WEBSITES & MARKETING DONE FOR YOU</h1>
-                <p>
-                    Automate your lead generation process with tailor make
-                    business solutions
-                </p>
-                <button>Book a Call</button>
-            </div>
-            <div>
-                <img src="./images/unlocked-main.jpg" />
-            </div>
-        </section>
-
-        <section>
-            <div>
-                <span>1</span>
-                <p>SUCCESS</p>
-                <h2>TIMELINE</h2>
-            </div>
-            <div>
-                <div>
-                    <h3>DISCOVERY CALL</h3>
+        <section class="main container my-5">
+            <div class="row">
+                <div class="main-text col-lg-6 pt-5 mt-5">
+                    <p class="m-0">DATA DRIVEN</p>
+                    <h1 class="ff-oswald lh-base m-0">
+                        WEBSITES & MARKETING DONE FOR YOU
+                    </h1>
                     <p>
-                        Schedule a Brainstorm session with us where we go over
-                        your business and what you stand for. Throughout this
-                        discovery call we check if you are fit for s working
-                        together. Lorem Ipsum is simply dummy text of the
-                        printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the
-                        1500's.
+                        Automate your lead generation process with tailor made
+                        business solutions
                     </p>
-                    <button>Book a Call</button>
+                    <div
+                        class="
+                            d-flex
+                            justify-content-center justify-content-lg-start
+                        "
+                    >
+                        <button
+                            type="button"
+                            class="
+                                btn btn-primary
+                                rounded-border
+                                fs-6
+                                px-4
+                                py-2
+                                mb-5
+                            "
+                        >
+                            Book a Call
+                        </button>
+                    </div>
                 </div>
-                <div>
-                    <h3>STRATEGY SESSION</h3>
-                    <p>
-                        Schedule a Brainstorm session with us where we go over
-                        your business and what you stand for. Throughout this
-                        discovery call we check if you are fit for s working
-                        together. Lorem Ipsum is simply dummy text of the
-                        printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the
-                        1500's.
-                    </p>
-                    <button>Book a Call</button>
-                </div>
-                <div>
-                    <h3>COMPLETE AUTOMATION</h3>
-                    <p>
-                        Schedule a Brainstorm session with us where we go over
-                        your business and what you stand for. Throughout this
-                        discovery call we check if you are fit for s working
-                        together.
-                    </p>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500's.
-                    </p>
-                    <button>Book a Call</button>
+                <div
+                    class="
+                        col-lg-6
+                        d-flex
+                        justify-content-center justify-content-lg-end
+                    "
+                >
+                    <img
+                        class="unlocked-main-img"
+                        src="./images/unlocked-main.jpg"
+                    />
                 </div>
             </div>
         </section>
 
+        <section class="container">
+            <div class="d-flex mt-5">
+                <span
+                    class="
+                        fw-bold
+                        border border-dark
+                        rounded-circle
+                        px-4
+                        py-3
+                        align-self-end
+                    "
+                    >1</span
+                >
+                <div class="ms-3">
+                    <p class="m-0">SUCCESS</p>
+                    <h2 class="ff-oswald m-0">TIMELINE</h2>
+                </div>
+            </div>
+            <div class="container mt-5 mb-5">
+                <div class="row">
+                    <div class="d-flex justify-content-lg-end">
+                        <ul class="timeline">
+                            <li class="pb-5 first">
+                                <span class="list-border" />
+                                <h3 class="ff-oswald">DISCOVERY CALL</h3>
+                                <p class="m-0">
+                                    Schedule a Brainstorm session with us where
+                                    we go over your business and what you stand
+                                    for. Throughout this discovery call we check
+                                    if you are fit for s working together.
+                                </p>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy
+                                    text ever since the 1500's.
+                                </p>
+                                <button
+                                    type="button"
+                                    class="
+                                        btn btn-primary
+                                        rounded-border
+                                        fs-6
+                                        px-4
+                                        py-2
+                                    "
+                                >
+                                    Book a Call
+                                </button>
+                            </li>
+                            <li class="pb-5 middle">
+                                <h3 class="ff-oswald">STRATEGY SESSION</h3>
+                                <p class="m-0">
+                                    Schedule a Brainstorm session with us where
+                                    we go over your business and what you stand
+                                    for. Throughout this discovery call we check
+                                    if you are fit for s working together.
+                                </p>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy
+                                    text ever since the 1500's.
+                                </p>
+                                <button
+                                    type="button"
+                                    class="
+                                        btn btn-primary
+                                        rounded-border
+                                        fs-6
+                                        px-4
+                                        py-2
+                                    "
+                                >
+                                    Book a Call
+                                </button>
+                            </li>
+                            <li class="last">
+                                <h3 class="ff-oswald">COMPLETE AUTOMATION</h3>
+                                <p class="m-0">
+                                    Schedule a Brainstorm session with us where
+                                    we go over your business and what you stand
+                                    for. Throughout this discovery call we check
+                                    if you are fit for s working together.
+                                </p>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy
+                                    text ever since the 1500's.
+                                </p>
+                                <button
+                                    type="button"
+                                    class="
+                                        btn btn-primary
+                                        rounded-border
+                                        fs-6
+                                        px-4
+                                        py-2
+                                    "
+                                >
+                                    Book a Call
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section>
-            <div>
-                <span>2</span>
-                <p>OUR</p>
-                <h2>SERVICES</h2>
-            </div>
-            <div>
-                <div>
-                    <h3>WEB DESIGN</h3>
-                    <p>
-                        We design stunning websites that do more than just look
-                        good. Every website we design is tailor made to your
-                        business needs.
-                    </p>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500's.
-                    </p>
-                    <button>Book a Call</button>
-                </div>
-                <div>
-                    <img src="./images/unlocked-services-1.jpg" />
+            <div class="d-flex my-5">
+                <span
+                    class="
+                        fw-bold
+                        border border-dark
+                        rounded-circle
+                        px-4
+                        py-3
+                        align-self-end
+                    "
+                    >2</span
+                >
+                <div class="ms-3">
+                    <p class="m-0">OUR</p>
+                    <h2 class="ff-oswald m-0">SERVICES</h2>
                 </div>
             </div>
-            <div>
-                <div>
-                    <img src="./images/unlocked-services-2.jpg" />
-                </div>
-                <div>
-                    <h3>INTERNET MARKETING</h3>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500's.
-                    </p>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500's.
-                    </p>
-                    <button>Book a Call</button>
-                    <div>
-                        <div>
-                            <h2>RETURNS ON ADS</h2>
-                            <h2>550%</h2>
+            <div class="services">
+                <div class="container mb-5">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-6">
+                            <h3 class="services-heading ff-oswald">
+                                WEB DESIGN
+                            </h3>
+                            <p class="m-0">
+                                We design stunning websites that do more than
+                                just look good. Every website we design is
+                                tailor made to your business needs.
+                            </p>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard dummy text ever since
+                                the 1500's.
+                            </p>
+                            <button
+                                type="button"
+                                class="
+                                    btn btn-primary
+                                    rounded-border
+                                    fs-6
+                                    px-4
+                                    py-2
+                                "
+                            >
+                                Book a Call
+                            </button>
                         </div>
+                        <div class="col-lg-6 my-5">
+                            <img
+                                class="unlocked-services-1-img"
+                                src="./images/unlocked-services-1.jpg"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-6 order-lg-last">
+                            <h3 class="services-heading ff-oswald">
+                                INTERNET MARKETING
+                            </h3>
+                            <p class="m-0">
+                                Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard dummy text ever since
+                                the 1500's.
+                            </p>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing
+                                and typesetting industry. Lorem Ipsum has been
+                                the industry's standard dummy text ever since
+                                the 1500's.
+                            </p>
+                            <button
+                                type="button"
+                                class="
+                                    btn btn-primary
+                                    rounded-border
+                                    fs-6
+                                    px-4
+                                    py-2
+                                "
+                            >
+                                Book a Call
+                            </button>
+                            <div
+                                class="
+                                    services-adv
+                                    text-center
+                                    ff-oswald
+                                    d-flex
+                                    flex-column flex-md-row
+                                    justify-content-md-between
+                                    mt-5
+                                "
+                            >
+                                <div class="mb-4">
+                                    <h2>RETURNS ON ADS</h2>
+                                    <h2>550%</h2>
+                                </div>
+                                <div>
+                                    <h2>MONEY SPENT ON ADS</h2>
+                                    <h2>$450,000</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-first my-5">
+                            <img
+                                class="unlocked-services-2-img"
+                                src="./images/unlocked-services-2.jpg"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="clients">
+            <div class="d-flex my-5">
+                <span
+                    class="
+                        fw-bold
+                        border border-dark
+                        rounded-circle
+                        px-4
+                        py-3
+                        align-self-end
+                    "
+                    >3</span
+                >
+                <div class="ms-3">
+                    <p class="m-0">OUR</p>
+                    <h2 class="ff-oswald m-0">CLIENTS</h2>
+                </div>
+            </div>
+
+            <div
+                class="
+                    clients-row
+                    d-flex
+                    flex-column flex-lg-row
+                    justify-content-lg-between
+                "
+            >
+                <div class="card rounded-border shadow-sm p-3 my-3">
+                    <div class="card-body">
                         <div>
-                            <h2>MONEY SPENT ON ADS</h2>
-                            <h2>$450,000</h2>
+                            <p>
+                                We developed a great partnership with Unlocked
+                                Inc. and their dedication to our website is
+                                evident in all aspects of the site. We
+                                appreciate their attention to detail and
+                                creative approach to bringing our new exhibit to
+                                life online.
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="me-3">
+                                <img
+                                    class="empty-img"
+                                    src="./images/solid-color-image.jpeg"
+                                />
+                            </div>
+                            <div>
+                                <h4 class="m-0 fw-bold fs-5">MATT PARKER</h4>
+                                <p class="m-0">Mental Health Wellness Coach</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="
+                        card
+                        rounded-border
+                        shadow-sm
+                        p-3
+                        my-3
+                        align-self-end
+                    "
+                >
+                    <div class="card-body">
+                        <div>
+                            <p>
+                                We developed a great partnership with Unlocked
+                                Inc. and their dedication to our website is
+                                evident in all aspects of the site. We
+                                appreciate their attention to detail and
+                                creative approach to bringing our new exhibit to
+                                life online.
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="me-3">
+                                <img
+                                    class="empty-img"
+                                    src="./images/solid-color-image.jpeg"
+                                />
+                            </div>
+                            <div>
+                                <h4 class="m-0 fw-bold fs-5">MATT PARKER</h4>
+                                <p class="m-0">Mental Health Wellness Coach</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="
+                    clients-row
+                    d-flex
+                    flex-column flex-lg-row
+                    justify-content-lg-between
+                "
+            >
+                <div class="card rounded-border shadow-sm p-3 my-3">
+                    <div class="card-body">
+                        <div>
+                            <p>
+                                We developed a great partnership with Unlocked
+                                Inc. and their dedication to our website is
+                                evident in all aspects of the site. We
+                                appreciate their attention to detail and
+                                creative approach to bringing our new exhibit to
+                                life online.
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="me-3">
+                                <img
+                                    class="empty-img"
+                                    src="./images/solid-color-image.jpeg"
+                                />
+                            </div>
+                            <div>
+                                <h4 class="m-0 fw-bold fs-5">MATT PARKER</h4>
+                                <p class="m-0">Mental Health Wellness Coach</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="
+                        card
+                        rounded-border
+                        shadow-sm
+                        p-3
+                        my-3
+                        align-self-end
+                    "
+                >
+                    <div class="card-body">
+                        <div>
+                            <p>
+                                We developed a great partnership with Unlocked
+                                Inc. and their dedication to our website is
+                                evident in all aspects of the site. We
+                                appreciate their attention to detail and
+                                creative approach to bringing our new exhibit to
+                                life online.
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="me-3">
+                                <img
+                                    class="empty-img"
+                                    src="./images/solid-color-image.jpeg"
+                                />
+                            </div>
+                            <div>
+                                <h4 class="m-0 fw-bold fs-5">MATT PARKER</h4>
+                                <p class="m-0">Mental Health Wellness Coach</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -164,103 +506,50 @@
         </section>
 
         <section>
-            <div>
-                <span>3</span>
-                <p>OUR</p>
-                <h2>CLIENTS</h2>
-            </div>
-            <div>
-                <div>
-                    <div>
-                        <p>
-                            We developed a great partnership with Unlocked Inc.
-                            and their dedication to our website is evident in
-                            all aspects of the site. We appreciate their
-                            attention to detail and creative approach to
-                            bringing our new exhibit to life online.
-                        </p>
-                    </div>
-                    <div>
-                        <img />
-                        <h4>MATT PARKER</h4>
-                        <p>Mental Health Wellness Coach</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <div>
-                        <p>
-                            We developed a great partnership with Unlocked Inc.
-                            and their dedication to our website is evident in
-                            all aspects of the site. We appreciate their
-                            attention to detail and creative approach to
-                            bringing our new exhibit to life online.
-                        </p>
-                    </div>
-                    <div>
-                        <img />
-                        <h4>MATT PARKER</h4>
-                        <p>Mental Health Wellness Coach</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <div>
-                        <p>
-                            We developed a great partnership with Unlocked Inc.
-                            and their dedication to our website is evident in
-                            all aspects of the site. We appreciate their
-                            attention to detail and creative approach to
-                            bringing our new exhibit to life online.
-                        </p>
-                    </div>
-                    <div>
-                        <img />
-                        <h4>MATT PARKER</h4>
-                        <p>Mental Health Wellness Coach</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <div>
-                        <p>
-                            We developed a great partnership with Unlocked Inc.
-                            and their dedication to our website is evident in
-                            all aspects of the site. We appreciate their
-                            attention to detail and creative approach to
-                            bringing our new exhibit to life online.
-                        </p>
-                    </div>
-                    <div>
-                        <img />
-                        <h4>MATT PARKER</h4>
-                        <p>Mental Health Wellness Coach</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <div class="form my-5">
+                <h1 class="text-center ff-oswald my-4">GET IN TOUCH</h1>
+                <div
+                    class="
+                        d-flex
+                        flex-column
+                        justify-content-center
+                        align-items-center
+                    "
+                >
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+                    <textarea
+                        cols="30"
+                        rows="5"
+                        placeholder="Message"
+                    ></textarea>
 
-        <section>
-            <div>
-                <h2>GET IN TOUCH</h2>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <textarea cols="20" rows="5" placeholder="Message"></textarea>
-                <button>Send Message</button>
+                    <button
+                        type="button"
+                        class="btn btn-primary rounded-border fs-6 px-4 py-2"
+                    >
+                        Send Message
+                    </button>
+                </div>
             </div>
-            <div>
+            <div
+                class="
+                    footer
+                    d-flex
+                    flex-column flex-lg-row
+                    justify-content-lg-between
+                    align-items-center
+                "
+            >
                 <div>
                     <p>Unlocked Inc. &copy; 2021</p>
-                    <div>
+                    <div class="footer-links d-flex justify-content-between">
                         <a>Terms</a>
                         <a>Privacy</a>
                         <a>Cookies</a>
                     </div>
                 </div>
-                <div>
+                <div class="icons d-flex justify-content-between">
                     <i class="bi bi-facebook"></i>
                     <i class="bi bi-instagram"></i>
                     <i class="bi bi-linkedin"></i>
@@ -268,16 +557,6 @@
             </div>
         </section>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-            crossorigin="anonymous"
-        ></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
             integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
